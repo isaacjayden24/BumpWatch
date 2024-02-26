@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        xmlns:tools="http://schemas.android.com/tools"
+         tools:context=".Dashboard.KickCounterFragment"
+    >
+
+        <!-- Kick Counter Title -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kick Counter"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextView"/>
+
+        <!-- Display of Kick Counts -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="36sp"
+            android:layout_below="@id/textViewTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.MaterialComponents.TextView"/>
+
+        <!-- Button to Increment Kick Count -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonIncrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increment"
+            android:layout_below="@id/textViewCounter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+        <!-- Button to Reset Kick Count -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_below="@id/buttonIncrement"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+    </RelativeLayout>
+

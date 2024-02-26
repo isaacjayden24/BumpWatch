@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- community_support_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Model.CommunitysupportFragment">
+
+<!-- Community Support Title -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Community Support"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="16dp"/>
+
+<!-- Description -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Connect with other expecting mothers, ask questions, and share experiences in our community forums."
+    android:textSize="16sp"
+    android:layout_marginBottom="16dp"/>
+
+<!-- Join Community Button -->
+<Button
+    android:id="@+id/joinCommunityButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Join Community"
+    android:textSize="18sp"
+    android:textColor="@android:color/white"
+    android:padding="12dp"
+    android:gravity="center"
+    android:layout_marginBottom="16dp"/>
+
+<!-- Articles Title -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Healthcare Articles"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="8dp"/>
+
+<!-- Article List -->
+<ListView
+    android:id="@+id/articleListView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@null"
+    android:dividerHeight="0dp"/>
+
+</LinearLayout>
+

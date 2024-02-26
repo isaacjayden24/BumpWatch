@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!-- weight_tracker_layout.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp"
+
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".Dashboard.WeightTrackerFragment">
+
+<!-- Title -->
+<TextView
+    android:id="@+id/weightTrackerTitleTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Weight Tracker"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="16dp"/>
+
+<!-- Weight Entry -->
+<EditText
+    android:id="@+id/weightEntryEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter Weight (lbs)"
+    android:inputType="numberDecimal"
+    android:layout_marginBottom="16dp"/>
+
+<!-- Date Selector -->
+<TextView
+    android:id="@+id/dateSelectorTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Select Date"
+    android:textSize="18sp"
+    android:layout_marginBottom="8dp"/>
+
+<DatePicker
+    android:id="@+id/datePicker"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<!-- Save Button -->
+<Button
+    android:id="@+id/saveWeightButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Save"
+    android:layout_gravity="end"
+    android:layout_marginTop="16dp"/>
+
+</LinearLayout>

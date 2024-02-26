@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- meal_planner_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".Nutrition.MealPlannerFragment">
+
+<!-- Meal Planner Title -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Meal Planner"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="16dp"/>
+
+<!-- Weekly Meal Plan -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- Monday Meal -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Placeholder for Monday meal details -->
+        <TextView
+            android:id="@+id/mondayMealTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breakfast: Scrambled eggs\nLunch: Chicken salad\nDinner: Spaghetti"/>
+
+    </LinearLayout>
+
+    <!-- Tuesday Meal -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Placeholder for Tuesday meal details -->
+        <TextView
+            android:id="@+id/tuesdayMealTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breakfast: Oatmeal\nLunch: Grilled chicken sandwich\nDinner: Stir-fried vegetables"/>
+
+    </LinearLayout>
+
+    <!-- Add more days as needed -->
+
+</LinearLayout>
+
+<!-- Add Meal Plan Button -->
+<Button
+    android:id="@+id/addMealPlanButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Meal Plan"
+    android:layout_gravity="center"
+    android:layout_marginTop="16dp"/>
+
+</LinearLayout>

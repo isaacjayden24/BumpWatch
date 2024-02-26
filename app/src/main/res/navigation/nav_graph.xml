@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.bumpwatch.Model.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_nutritionFragment"
+            app:destination="@id/nutritionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.bumpwatch.Model.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_appointmentTrackerFragment"
+            app:destination="@id/appointmentTrackerFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_contractionTimerFragment"
+            app:destination="@id/contractionTimerFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_kickCounterFragment"
+            app:destination="@id/kickCounterFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_symptomTrackerFragment"
+            app:destination="@id/symptomTrackerFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_weightTrackerFragment"
+            app:destination="@id/weightTrackerFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_pregnancyWeekFragment"
+            app:destination="@id/pregnancyWeekFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nutritionFragment"
+        android:name="com.example.bumpwatch.Model.NutritionFragment"
+        android:label="fragment_nutrition"
+        tools:layout="@layout/fragment_nutrition" >
+        <action
+            android:id="@+id/action_nutritionFragment_to_exerciseTrackerFragment"
+            app:destination="@id/exerciseTrackerFragment" />
+        <action
+            android:id="@+id/action_nutritionFragment_to_workoutTutorialFragment"
+            app:destination="@id/workoutTutorialFragment" />
+        <action
+            android:id="@+id/action_nutritionFragment_to_mealPlannerFragment"
+            app:destination="@id/mealPlannerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentTrackerFragment"
+        android:name="com.example.bumpwatch.Dashboard.AppointmentTrackerFragment"
+        android:label="fragment_appointment_tracker"
+        tools:layout="@layout/fragment_appointment_tracker" />
+    <fragment
+        android:id="@+id/communitysupportFragment"
+        android:name="com.example.bumpwatch.Model.CommunitysupportFragment"
+        android:label="fragment_communitysupport"
+        tools:layout="@layout/fragment_communitysupport" />
+    <fragment
+        android:id="@+id/contractionTimerFragment"
+        android:name="com.example.bumpwatch.Dashboard.ContractionTimerFragment"
+        android:label="fragment_contraction_timer"
+        tools:layout="@layout/fragment_contraction_timer" />
+    <fragment
+        android:id="@+id/mealPlannerFragment"
+        android:name="com.example.bumpwatch.Nutrition.MealPlannerFragment"
+        android:label="fragment_meal_planner"
+        tools:layout="@layout/fragment_meal_planner" />
+    <fragment
+        android:id="@+id/kickCounterFragment"
+        android:name="com.example.bumpwatch.Dashboard.KickCounterFragment"
+        android:label="fragment_kick_counter"
+        tools:layout="@layout/fragment_kick_counter" />
+    <fragment
+        android:id="@+id/symptomTrackerFragment"
+        android:name="com.example.bumpwatch.Dashboard.SymptomTrackerFragment"
+        android:label="fragment_symptom_tracker"
+        tools:layout="@layout/fragment_symptom_tracker" />
+    <fragment
+        android:id="@+id/weightTrackerFragment"
+        android:name="com.example.bumpwatch.Dashboard.WeightTrackerFragment"
+        android:label="fragment_weight_tracker"
+        tools:layout="@layout/fragment_weight_tracker" />
+    <fragment
+        android:id="@+id/workoutTutorialFragment"
+        android:name="com.example.bumpwatch.Nutrition.WorkoutTutorialFragment"
+        android:label="fragment_workout_tutorial"
+        tools:layout="@layout/fragment_workout_tutorial" />
+    <fragment
+        android:id="@+id/exerciseTrackerFragment"
+        android:name="com.example.bumpwatch.Nutrition.ExerciseTrackerFragment"
+        android:label="fragment_exercise_tracker"
+        tools:layout="@layout/fragment_exercise_tracker" />
+    <fragment
+        android:id="@+id/pregnancyWeekFragment"
+        android:name="com.example.bumpwatch.Dashboard.PregnancyWeekFragment"
+        android:label="fragment_pregnancy_week"
+        tools:layout="@layout/fragment_pregnancy_week" />
+</navigation>
