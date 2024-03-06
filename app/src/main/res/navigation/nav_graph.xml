@@ -14,8 +14,8 @@
             android:id="@+id/action_loginFragment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_nutritionFragment"
-            app:destination="@id/nutritionFragment" />
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
     </fragment>
     <fragment
         android:id="@+id/dashboardFragment"
@@ -32,14 +32,17 @@
             android:id="@+id/action_dashboardFragment_to_kickCounterFragment"
             app:destination="@id/kickCounterFragment" />
         <action
-            android:id="@+id/action_dashboardFragment_to_symptomTrackerFragment"
-            app:destination="@id/symptomTrackerFragment" />
-        <action
             android:id="@+id/action_dashboardFragment_to_weightTrackerFragment"
             app:destination="@id/weightTrackerFragment" />
         <action
             android:id="@+id/action_dashboardFragment_to_pregnancyWeekFragment"
             app:destination="@id/pregnancyWeekFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_symptomsFragment"
+            app:destination="@id/symptomsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_nutritionFragment"
+            app:destination="@id/nutritionFragment" />
     </fragment>
     <fragment
         android:id="@+id/nutritionFragment"
@@ -55,6 +58,9 @@
         <action
             android:id="@+id/action_nutritionFragment_to_mealPlannerFragment"
             app:destination="@id/mealPlannerFragment" />
+        <action
+            android:id="@+id/action_nutritionFragment_to_communitysupportFragment"
+            app:destination="@id/communitysupportFragment" />
     </fragment>
     <fragment
         android:id="@+id/appointmentTrackerFragment"
@@ -82,11 +88,6 @@
         android:label="fragment_kick_counter"
         tools:layout="@layout/fragment_kick_counter" />
     <fragment
-        android:id="@+id/symptomTrackerFragment"
-        android:name="com.example.bumpwatch.Dashboard.SymptomTrackerFragment"
-        android:label="fragment_symptom_tracker"
-        tools:layout="@layout/fragment_symptom_tracker" />
-    <fragment
         android:id="@+id/weightTrackerFragment"
         android:name="com.example.bumpwatch.Dashboard.WeightTrackerFragment"
         android:label="fragment_weight_tracker"
@@ -106,4 +107,21 @@
         android:name="com.example.bumpwatch.Dashboard.PregnancyWeekFragment"
         android:label="fragment_pregnancy_week"
         tools:layout="@layout/fragment_pregnancy_week" />
+    <fragment
+        android:id="@+id/symptomsFragment"
+        android:name="com.example.bumpwatch.Dashboard.SymptomsFragment"
+        android:label="fragment_symptoms_tracking"
+        tools:layout="@layout/fragment_symptoms_tracking" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.bumpwatch.Dashboard.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
 </navigation>

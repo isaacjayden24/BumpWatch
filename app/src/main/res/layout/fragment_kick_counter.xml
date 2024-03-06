@@ -6,6 +6,7 @@
         android:padding="16dp"
         xmlns:tools="http://schemas.android.com/tools"
          tools:context=".Dashboard.KickCounterFragment"
+    android:background="#FFDE"
     >
 
         <!-- Kick Counter Title -->
@@ -53,6 +54,15 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
             style="@style/Widget.MaterialComponents.Button"/>
+    <TextView
+        android:id="@+id/kickCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kicks Recorded:"
+        android:layout_below="@+id/buttonReset"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
 
-    </RelativeLayout>
+
+</RelativeLayout>
 

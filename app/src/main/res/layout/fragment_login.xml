@@ -23,6 +23,7 @@ tools:context=".Model.LoginFragment">
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="48dp"
         android:layout_marginBottom="16dp"
+        android:src="@drawable/certified"
       />
 
     <TextView
@@ -31,6 +32,7 @@ tools:context=".Model.LoginFragment">
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="132dp"
         android:text="BABY BUMP"
+        android:textStyle="bold"
         android:textAllCaps="true"
         android:textSize="16sp" />
 
@@ -74,7 +76,7 @@ tools:context=".Model.LoginFragment">
             android:text="@string/shr_button_next" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/cancel_button"
+            android:id="@+id/signup_button"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

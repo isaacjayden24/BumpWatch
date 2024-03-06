@@ -1,103 +1,336 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- week_by_week_update_layout.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Dashboard.PregnancyWeekFragment"
-  >
+    android:background="#FFDE"
+    tools:context=".Dashboard.PregnancyWeekFragment">
 
-    <!-- Week Title -->
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Week 1"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Week Description -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies velit in magna posuere scelerisque. Sed tincidunt, ex id ullamcorper auctor, lacus ligula iaculis justo, ac tincidunt urna libero ut quam."
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp"/>
-
-
-    <!-- Week Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Week 1"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Week Description -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies velit in magna posuere scelerisque. Sed tincidunt, ex id ullamcorper auctor, lacus ligula iaculis justo, ac tincidunt urna libero ut quam."
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp"/>
+        android:orientation="vertical"
+        android:background="#F5F5F5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a list of the important weeks during your pregnancy"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
 
 
-    <!-- Week Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Week 1"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
 
-    <!-- Week Description -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies velit in magna posuere scelerisque. Sed tincidunt, ex id ullamcorper auctor, lacus ligula iaculis justo, ac tincidunt urna libero ut quam."
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp"/>
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 2"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:background="#80CBC4"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are conceived"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:background="#E1F5FE"/>
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 4"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:background="#80CBC4"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The pregnancy test is positive"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 5"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baby's organ formation starts.The heart starts functioning"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 10"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All major organs are formed .The heartbeats are well heard"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 12"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Risk of miscarriage is reduced"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 14"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The second trimester.Your pregnancy can now be announced "
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 15"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The baby can now see the light"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 16"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The ultrasound can now reveal your baby's gender"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 18"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movements of your baby are felt"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
 
 
-    <!-- Week Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Week 1"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 19"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Week Description -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies velit in magna posuere scelerisque. Sed tincidunt, ex id ullamcorper auctor, lacus ligula iaculis justo, ac tincidunt urna libero ut quam."
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp"/>
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your baby hears sound"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 23"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baby born at this stage is called as a premature baby.Survival chances are still there"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
 
 
-    <!-- Week Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Week 1"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 27"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Week Description -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies velit in magna posuere scelerisque. Sed tincidunt, ex id ullamcorper auctor, lacus ligula iaculis justo, ac tincidunt urna libero ut quam."
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp"/>
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are in your third trimester.Your baby can breathe"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Add more information as needed for each week -->
 
-</LinearLayout>
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 32"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baby's fingernails and toenails are formed"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 37"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A full-term pregnancy is complete"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!-- Week Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week 40"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#80CBC4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congratulations!You are due any time now"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
+

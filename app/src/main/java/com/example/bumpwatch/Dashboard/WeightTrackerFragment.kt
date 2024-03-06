@@ -4,57 +4,90 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.DatePicker
+import android.widget.EditText
+import android.widget.ListView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.bumpwatch.R
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [WeightTrackerFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class WeightTrackerFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+class WeightEntry(val year: Int, val month: Int, val day: Int, val weight: Double) {
+    override fun toString(): String {
+        return "Date: ${String.format("%02d", month + 1)}/${String.format("%02d", day)}/$year - Weight: $weight lbs"
     }
+}
+
+class WeightTrackerFragment : Fragment() {
+
+    private lateinit var weightEntryEditText: EditText
+    private lateinit var datePicker: DatePicker
+    private lateinit var saveWeightButton: Button
+    private lateinit var retrieveWeightsButton: Button
+    private lateinit var weightListView: ListView
+
+    private val weightEntries = mutableListOf<WeightEntry>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_weight_tracker, container, false)
+        val view = inflater.inflate(R.layout.fragment_weight_tracker, container, false)
+
+        weightEntryEditText = view.findViewById(R.id.weightEntryEditText)
+        datePicker = view.findViewById(R.id.datePicker)
+        saveWeightButton = view.findViewById(R.id.saveWeightButton)
+        retrieveWeightsButton = view.findViewById(R.id.retrieveWeightsButton)
+        weightListView = view.findViewById(R.id.weightListView)
+
+        saveWeightButton.setOnClickListener {
+            saveWeightEntry()
+        }
+
+        retrieveWeightsButton.setOnClickListener {
+            displayWeightEntries()
+        }
+
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment WeightTrackerFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            WeightTrackerFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun saveWeightEntry() {
+        val weightString = weightEntryEditText.text.toString()
+        if (weightString.isEmpty()) {
+            // Display error message indicating weight is required
+            Toast.makeText(context, "Please enter your weight", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        val weight = weightString.toDouble()
+        // Get the selected date from the DatePicker
+        val year = datePicker.year
+        val month = datePicker.month
+        val day = datePicker.dayOfMonth
+
+        // Create a new WeightEntry object and add it to the list
+        weightEntries.add(WeightEntry(year, month, day, weight))
+
+        // Display a success message
+        Toast.makeText(context, "Weight entry saved", Toast.LENGTH_SHORT).show()
+
+        // Clear the input fields
+        weightEntryEditText.text.clear()
+    }
+
+    private fun displayWeightEntries() {
+        // Create an ArrayList of strings to display weight entries in ListView
+        val displayEntries = ArrayList<String>()
+        for (entry in weightEntries) {
+            displayEntries.add(entry.toString())
+        }
+
+        // Create an ArrayAdapter to bind the ArrayList to the ListView
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, displayEntries)
+        weightListView.adapter = adapter
     }
 }
+
+
+

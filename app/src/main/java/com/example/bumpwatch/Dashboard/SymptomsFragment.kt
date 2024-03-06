@@ -8,12 +8,13 @@ import androidx.fragment.app.Fragment
 import com.example.bumpwatch.R
 
 
+
 /**
  * A simple [Fragment] subclass.
- * Use the [PregnancyWeekFragment.newInstance] factory method to
+ * Use the [SymptomsFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class PregnancyWeekFragment : Fragment() {
+class SymptomsFragment : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,9 +27,8 @@ class PregnancyWeekFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pregnancy_week, container, false)
-        //action_dashboardFragment_to_pregnancyWeekFragment"
+        return inflater.inflate(R.layout.fragment_symptoms_tracking, container, false)
+    }
 
 
-}
 }
