@@ -2,10 +2,12 @@
     <string name="app_name">BumpWatch</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="shr_button_next">Next</string>
+    <string name="shr_button_next">Login</string>
     <string name="shr_button_cancel">Sign up</string>
     <string name="shr_hint_username">Nickname</string>
     <string name="shr_hint_password">Password</string>
+    <string name="kick_counter">Kick Counter</string>
+    <string name="shr_error_password">Enter valid password</string>
 
 
 </resources>
