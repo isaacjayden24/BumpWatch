@@ -1,72 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- workout_tutorial_layout.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:padding="16dp"
-xmlns:tools="http://schemas.android.com/tools"
-tools:context=".Nutrition.WorkoutTutorialFragment">
-
-<!-- Workout Title -->
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Workout Tutorial"
-    android:textSize="24sp"
-    android:textStyle="bold"
-    android:layout_marginBottom="16dp"/>
-
-<!-- Exercise 1: Push-ups -->
-<LinearLayout
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="8dp"
-    android:layout_marginBottom="16dp">
-
-    <!-- Exercise Title -->
-    <TextView
-        android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Push-ups"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+        android:orientation="vertical"
+        android:padding="16dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".Nutrition.WorkoutTutorialFragment">
 
-    <!-- Exercise Description -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start in a plank position with your hands shoulder-width apart. Lower your body until your chest nearly touches the floor. Push back up to starting position."
-        android:textSize="16sp"/>
-</LinearLayout>
+        <!-- Workout Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout Tutorial"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
 
-<!-- Exercise 2: Squats -->
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="8dp"
-    android:layout_marginBottom="16dp">
+        <!-- Exercise 1: Push-ups -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp">
 
-    <!-- Exercise Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Squats"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+            <!-- Exercise Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Push-ups"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
 
-    <!-- Exercise Description -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stand with your feet shoulder-width apart. Lower your body as if sitting back into a chair, keeping your chest upright. Return to standing position."
-        android:textSize="16sp"/>
-</LinearLayout>
+            <!-- Exercise Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start in a plank position with your hands shoulder-width apart. Lower your body until your chest nearly touches the floor. Push back up to starting position."
+                android:textSize="16sp"/>
+        </LinearLayout>
 
-<!-- Add more exercises as needed -->
+        <!-- Exercise 2: Squats -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp">
 
-</LinearLayout>
+            <!-- Exercise Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Squats"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Exercise Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stand with your feet shoulder-width apart. Lower your body as if sitting back into a chair, keeping your chest upright. Return to standing position."
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Exercise 3: Lunges -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Exercise Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lunges"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Exercise Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stand with your feet hip-width apart. Step forward with one leg and lower your body until both knees are bent at a 90-degree angle. Push back to the starting position and repeat with the other leg."
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Exercise 4: Plank -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Exercise Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plank"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Exercise Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Begin in a push-up position with your arms straight and your body in a straight line from head to heels. Hold this position, keeping your core engaged, for the desired duration."
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Add more exercises as needed -->
+
+    </LinearLayout>
+
+</ScrollView>

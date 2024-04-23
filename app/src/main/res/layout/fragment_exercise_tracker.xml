@@ -1,37 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- exercise_tracker_layout.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Nutrition.ExerciseTrackerFragment">
+    android:layout_height="wrap_content">
 
-    <!-- Exercise Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Exercise Tracker"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Exercise List -->
-    <ListView
-        android:id="@+id/exerciseListView"
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@null"
-        android:dividerHeight="0dp"
-        android:layout_marginBottom="16dp"/>
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".Nutrition.ExerciseTrackerFragment">
 
-    <!-- Add Exercise Button -->
-    <Button
-        android:id="@+id/addExerciseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Exercise"
-        android:layout_gravity="end"/>
+        <!-- Date Picker -->
+        <TextView
+            android:id="@+id/text_select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date:"
+            android:textSize="18sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="32dp"/>
 
-</LinearLayout>
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_select_date"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="32dp"/>
+
+        <!-- Exercise Input -->
+        <TextView
+            android:id="@+id/text_enter_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Exercise:"
+            android:textSize="18sp"
+            android:layout_below="@id/date_picker"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="32dp"/>
+
+        <EditText
+            android:id="@+id/edit_exercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_enter_exercise"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="32dp"
+            android:hint="e.g., Running, Yoga, etc."
+            android:inputType="text"/>
+
+        <!-- Save Exercise Button -->
+        <Button
+            android:id="@+id/btn_save_exercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Exercise"
+            android:layout_below="@id/edit_exercise"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="32dp"
+            android:backgroundTint="@color/navy"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <!-- Display Exercise -->
+        <TextView
+            android:id="@+id/text_display_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_below="@id/btn_save_exercise"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="32dp"/>
+
+    </RelativeLayout>
+</ScrollView>

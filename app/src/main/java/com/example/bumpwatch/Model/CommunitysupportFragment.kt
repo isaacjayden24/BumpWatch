@@ -1,12 +1,6 @@
 package com.example.bumpwatch.Model
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.example.bumpwatch.R
-
+/*
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
@@ -24,10 +18,7 @@ class CommunitysupportFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
 
     override fun onCreateView(
@@ -52,9 +43,44 @@ class CommunitysupportFragment : Fragment() {
         fun newInstance(param1: String, param2: String) =
             CommunitysupportFragment().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+
+}*/
+
+import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import androidx.fragment.app.Fragment
+import com.example.bumpwatch.R
+
+
+class CommunitysupportFragment : Fragment() {
+
+    private val whatsappNumber = "+254797543699"
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_communitysupport, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val joinCommunity=view.findViewById<Button>(R.id.btn_join_community)
+        joinCommunity.setOnClickListener {
+            joinCommunity()
+        }
+    }
+
+    private fun joinCommunity() {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse("https://wa.me/$whatsappNumber/?text=Hello! I'm joining the wellness community.")
+        startActivity(intent)
     }
 }
+

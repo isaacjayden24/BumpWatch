@@ -45,7 +45,7 @@ android:padding="19dp">
 
 
 <androidx.cardview.widget.CardView
-    android:id="@+id/appointment_cardview"
+    android:id="@+id/meal_cardview"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:layout_weight="1"
@@ -54,7 +54,7 @@ android:padding="19dp">
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/appointment_textview"
+        android:id="@+id/meal_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -74,7 +74,7 @@ android:padding="19dp">
 
 
 <androidx.cardview.widget.CardView
-    android:id="@+id/weight_cardview"
+    android:id="@+id/exercise_cardview"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:layout_weight="1"
@@ -83,7 +83,7 @@ android:padding="19dp">
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/weight_textview"
+        android:id="@+id/exercise_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -93,7 +93,7 @@ android:padding="19dp">
 
 
 <androidx.cardview.widget.CardView
-    android:id="@+id/symptom_card"
+    android:id="@+id/community_card"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:layout_weight="1"
@@ -102,7 +102,7 @@ android:padding="19dp">
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/symptom_text"
+        android:id="@+id/community_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
